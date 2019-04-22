@@ -32,6 +32,16 @@ from email.mime.text import MIMEText
 #def splitaddrs(add):
     #if not(add): return []
 
+def random_useragent():
+    #http://useragentstring.com/pages/useragentstring.php
+    url = "https://fake-useragent.herokuapp.com/browsers/0.1.8"
+    r = requests.get(url)
+   randomuseragent = loads(r.text)['browsers']
+    #print(random.choice(randomuseragent[random.choice(list(randomuseragent))]))
+    return random.choice(randomuseragent[random.choice(list(randomuseragent))])
+
+#ua = random_useragent()
+
 #Gmail IMAP4_SSL.
 '''userid   = ''
 password   = ''
