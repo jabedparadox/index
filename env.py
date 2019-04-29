@@ -61,6 +61,7 @@ gethstname = os.popen("ipconfig /all").readlines() #wndws
 #os.system("sudo netstat -plunt
 #os.system("sudo lshw -short")
 #os.system("vim /sys/class/net/*/address")
+#aws ec2 describe-instances --filters "Name=,Values="
 
 thost = ""
 tport = 
